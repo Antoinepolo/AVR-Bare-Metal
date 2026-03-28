@@ -18,8 +18,6 @@ int main(void)
     
     while(1)
     {
-
-        //if ((PINB & (1 << PB0)) && (PINB & (1 << PB1)) && (PINB & (1 << PB2)))
         if (!(PINB & BTN_MASK) == 0)                                            // Si PINA & MASQUE == 0 alors
                                                                                 // Ex : PINB = 0b00000000 & 0b00000111 (masque) = 0 (tout appuyé)
         {
